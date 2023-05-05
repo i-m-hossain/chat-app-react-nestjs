@@ -3,7 +3,7 @@ import LoginForm from "../components/forms/LoginForm";
 
 function LoginPage() {
     return (
-        <Page>
+        <Page display="flex" alignItems="center" justifyContent="center">
             <LoginForm />
         </Page>
     );

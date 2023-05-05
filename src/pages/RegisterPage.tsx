@@ -1,12 +1,12 @@
 import RegisterForm from "../components/forms/RegisterForm";
 import { Page } from "../utils/styles";
 
-function Authentication() {
+function RegisterPage() {
     return (
-        <Page>
+        <Page display="flex" alignItems="center" justifyContent="center">
             <RegisterForm />
         </Page>
     );
 }
 
-export default Authentication;
+export default RegisterPage;
