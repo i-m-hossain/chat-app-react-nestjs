@@ -1,13 +1,12 @@
-import React from "react";
-import RegisterForm from "../components/forms/RegisterForm";
 import { Page } from "../utils/styles";
+import LoginForm from "../components/forms/LoginForm";
 
-function Authentication() {
+function LoginPage() {
     return (
         <Page>
-            <RegisterForm />
+            <LoginForm />
         </Page>
     );
 }
 
-export default Authentication;
+export default LoginPage;
