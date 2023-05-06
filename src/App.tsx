@@ -11,7 +11,7 @@ function App() {
             <Routes>
                 <Route path="/register" element={<RegisterPage />} />
                 <Route path="/login" element={<LoginPage />} />
-                <Route path="conversations" element={<ConversationsLayout />}>
+                <Route path="/conversations" element={<ConversationsLayout />}>
                     <Route index element={<Conversations />} />
                     <Route path=":id" element={<ConversationChannelPage />} />
                 </Route>

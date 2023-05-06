@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { PageProps } from "./styleTypes";
-
+const SIDEBAR_WIDTH=450
 export const InputContainer = styled.div`
     background-color: #131313;
     padding: 12px 16px;
@@ -59,14 +59,27 @@ export const Page = styled.div<PageProps>`
     align-items: ${(props) => props.alignItems};
 `;
 export const ConversationSidebarStyle = styled.aside`
-    background-color: #1f1f1f;
+    border-right: 1px solid #545454;
     height: 100%;
-    width: 350px;
+    width: ${SIDEBAR_WIDTH}px;
     position: absolute;
     top: 0;
     left: 0;
+
+    & header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #151515;
+        height: 100px;
+        padding: 0 24px;
+        border: 1px solid #545454
+        & h1{
+            font-weight: 500;
+        }
+    }
 `
 export const ConversationPageStyle=styled.div`
     height: 100%;
-    margin-left: 350px;
+    margin-left: ${SIDEBAR_WIDTH}px;
 `
